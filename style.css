@@ -21,7 +21,7 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/background-nyc.jpeg") no-repeat center center/cover;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 img {
@@ -56,7 +56,7 @@ img {
   margin: 7rem 4rem 0.5rem;
   padding: 1rem;
   width: 90%;
-  height: 70%;
+  height: 60%;
   /* background: lightblue; */
 }
 
@@ -70,4 +70,13 @@ img {
   height: 17rem;
   border: 5px solid var(--clr-light);
   transform: rotate(-15deg);
+}
+
+/* Text section */
+
+.main-section .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
