@@ -53,10 +53,10 @@ img {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 4rem;
-  margin: 7rem 4rem 0.5rem;
+  margin: 5rem 4rem 0.5rem;
   padding: 1rem;
   width: 90%;
-  height: 60%;
+  height: 70%;
   /* background: lightblue; */
 }
 
@@ -79,4 +79,17 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  background: rgba(29, 53, 87, 0.7);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.main-section .text-content p {
+  line-height: 1.7;
+}
+
+/* Utilities */
+
+.text-primary {
+  color: var(--clr-secondary);
 }
