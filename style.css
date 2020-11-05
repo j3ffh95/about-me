@@ -21,7 +21,7 @@ body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/background-nyc.jpeg") no-repeat center center/cover;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 img {
@@ -86,6 +86,16 @@ img {
 
 .main-section .text-content p {
   line-height: 1.7;
+}
+
+.social-buttons a i {
+  margin: 1rem 0.5rem 0;
+  color: var(--clr-light);
+}
+
+.social-buttons a i:hover {
+  color: var(--clr-secondary);
+  cursor: pointer;
 }
 
 /* Utilities */
