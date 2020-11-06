@@ -123,10 +123,12 @@ i:hover {
 
 /* Hobbies Section */
 
-/* Devices less than 550px */
-@media screen and (max-width: 550px) {
+/* Devices less than 768px */
+@media screen and (max-width: 768px) {
   .main-header {
-    width: 27%;
+    margin: 0 auto;
+    padding: 10px 0 0;
+    width: 130px;
   }
 
   .main-header h1,
@@ -134,5 +136,28 @@ i:hover {
     font-size: 1rem;
     margin: 0 0.2rem;
     line-height: 30px;
+  }
+
+  .main-section {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .main-section .img-container {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  .main-section .img-container img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .main-section .text-content {
+    margin: 1rem 0 0 2rem;
+  }
+
+  .main-section .text-content p {
+    font-size: 1rem;
   }
 }
