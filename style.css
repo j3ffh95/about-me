@@ -18,10 +18,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/background-nyc.jpeg") no-repeat center center/cover;
-  height: 100vh;
-  /* overflow: hidden; */
 }
 
 img {
@@ -29,13 +25,20 @@ img {
 }
 
 /* main header */
+.main-container {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/background-nyc.jpeg") no-repeat center center/cover;
+  height: 100vh;
+}
+
 .main-header {
   display: flex;
   align-items: center;
-  margin: 2rem 0 0.5rem 4rem;
   /* background: lightblue; */
-  width: 18%;
+  width: 20%;
   border-bottom: 2px solid var(--clr-dark);
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
 }
 
 .main-header h1 {
@@ -70,6 +73,11 @@ img {
   height: 17rem;
   border: 5px solid var(--clr-light);
   transform: rotate(-15deg);
+  transition: transform 0.5s ease;
+}
+
+.main-section .img-container img:hover {
+  transform: rotateX(360deg);
 }
 
 /* Text section */
@@ -102,4 +110,29 @@ img {
 
 .text-primary {
   color: var(--clr-secondary);
+}
+
+i {
+  transition: transform 0.5s ease-in-out;
+}
+
+i:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+/* Hobbies Section */
+
+/* Devices less than 550px */
+@media screen and (max-width: 550px) {
+  .main-header {
+    width: 27%;
+  }
+
+  .main-header h1,
+  .main-header i {
+    font-size: 1rem;
+    margin: 0 0.2rem;
+    line-height: 30px;
+  }
 }
