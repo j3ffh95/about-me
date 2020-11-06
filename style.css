@@ -247,10 +247,12 @@ i:hover {
 
   .main-section .text-content {
     margin: 1rem 0 0 2rem;
+    overflow: auto;
+    height: 150%;
   }
 
   .main-section .text-content p {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .flex-items {
