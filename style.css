@@ -184,8 +184,7 @@ i:hover {
 /* Add Animation */
 .modal-content,
 #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
+  animation: zoom 0.6s ease;
 }
 
 @keyframes zoom {
